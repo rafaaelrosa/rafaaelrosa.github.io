@@ -29,9 +29,10 @@
     .card h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
     .card a { display: inline-block; margin-top: 0.6rem; font-weight: 600; }
-    .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 0.65rem; margin-top: 0.85rem; }
-    .links a { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.85rem 1rem; text-decoration: none; color: var(--fg); font-weight: 600; }
+    .links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-top: 0.85rem; }
+    .links a { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 0.55rem 0.6rem; text-decoration: none; color: var(--fg); font-weight: 600; font-size: 0.88rem; text-align: center; }
     .links a:hover { border-color: var(--accent); }
+    @media (max-width: 30rem) { .links { grid-template-columns: repeat(2, 1fr); } }
     footer { color: var(--muted); font-size: 0.85rem; margin-top: 2.5rem; }
   </style>
 </head>
@@ -43,7 +44,7 @@
   <section class="card">
     <h3>Deus.iA — Pastoral assistant</h3>
     <p>Calm, Bible-centered conversation. Available on iOS, in Portuguese and English.</p>
-    <a href="https://apps.apple.com/app/id6747890119" target="_blank" rel="noopener noreferrer">View on the App Store →</a>
+    <a href="https://apps.apple.com/us/app/deus-ia-god-chat-bible-ai/id6761734427" target="_blank" rel="noopener noreferrer">View on the App Store →</a>
   </section>
 
   <h2>Legal &amp; support</h2>
