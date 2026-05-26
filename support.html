@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deus.iA — Support</title>
+  <meta name="description" content="Support and help for the Deus.iA app. Contact us or read frequently asked questions." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1419;
+      --fg: #e7ecf1;
+      --muted: #9aa5b1;
+      --accent: #6b9ef7;
+      --card: rgba(255, 255, 255, 0.06);
+      --border: rgba(127, 127, 127, 0.2);
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f6f7f9; --fg: #1a1f26; --muted: #5c6570; --accent: #2563eb; --card: #fff; --border: rgba(0, 0, 0, 0.08); }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.55; font-size: 1.05rem; }
+    .wrap { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.65rem; margin: 0 0 0.35rem; font-weight: 700; }
+    .lead { color: var(--muted); margin: 0 0 1.75rem; font-size: 1rem; }
+    h2 { font-size: 1.1rem; margin: 2rem 0 0.75rem; font-weight: 600; }
+    .card { background: var(--card); border-radius: 12px; padding: 1.1rem 1.15rem; border: 1px solid var(--border); }
+    a { color: var(--accent); word-break: break-word; }
+    .contact a { font-weight: 600; font-size: 1.1rem; }
+    details { margin-bottom: 0.65rem; border-radius: 8px; padding: 0.5rem 0.65rem; background: var(--card); border: 1px solid var(--border); }
+    summary { cursor: pointer; font-weight: 600; }
+    details p { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.98rem; }
+    .nav { font-size: 0.9rem; margin-bottom: 1rem; }
+    footer { color: var(--muted); font-size: 0.85rem; margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <p class="nav"><a href="./">← Home</a></p>
+  <h1>Deus.iA — Support</h1>
+  <p class="lead">Official help and contact page for the Deus.iA app.</p>
+
+  <section class="card contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading" style="margin-top: 0">Contact</h2>
+    <p style="margin: 0 0 0.5rem">For questions, technical issues, or help requests, email:</p>
+    <p style="margin: 0">
+      <a href="mailto:deus.ai.support@gmail.com">deus.ai.support@gmail.com</a>
+    </p>
+    <p style="margin: 0.85rem 0 0; color: var(--muted); font-size: 0.92rem">
+      We typically reply on business days. Include your app version and platform (iOS or Android) in your message.
+    </p>
+  </section>
+
+  <section aria-labelledby="faq-heading">
+    <h2 id="faq-heading">Frequently asked questions</h2>
+
+    <details>
+      <summary>I forgot my password</summary>
+      <p>In the app, use the password recovery option on the sign-in screen and follow the link sent to your email.</p>
+    </details>
+
+    <details>
+      <summary>Purchases or subscription</summary>
+      <p>Purchases are processed by Apple (App Store). For refunds or billing issues, use your Apple purchase history or email us with your receipt.</p>
+    </details>
+
+    <details>
+      <summary>Delete my account</summary>
+      <p>Email <a href="mailto:deus.ai.support@gmail.com">deus.ai.support@gmail.com</a> from the address associated with the account you want removed. We may ask for confirmation for security reasons.</p>
+    </details>
+
+    <details>
+      <summary>Report a bug or suggestion</summary>
+      <p>Write to <a href="mailto:deus.ai.support@gmail.com">deus.ai.support@gmail.com</a> with a description of what happened and, if possible, screenshots.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p><a href="./">← Back to home</a> · <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a></p>
+  </footer>
+</main>
+</body>
+</html>
