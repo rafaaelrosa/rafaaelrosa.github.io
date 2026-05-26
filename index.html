@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafael Rosa — Developer site</title>
+  <meta name="description" content="Rafael Rosa — independent developer. Maker of Deus.iA, a Bible-grounded pastoral assistant for iOS." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1419;
+      --fg: #e7ecf1;
+      --muted: #9aa5b1;
+      --accent: #6b9ef7;
+      --card: rgba(255, 255, 255, 0.06);
+      --border: rgba(127, 127, 127, 0.2);
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f6f7f9; --fg: #1a1f26; --muted: #5c6570; --accent: #2563eb; --card: #fff; --border: rgba(0, 0, 0, 0.08); }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.55; }
+    .wrap { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; margin: 0 0 0.35rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 0.85rem; }
+    .lead { color: var(--muted); margin: 0 0 1.5rem; }
+    a { color: var(--accent); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.15rem; margin-bottom: 0.9rem; }
+    .card h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .card a { display: inline-block; margin-top: 0.6rem; font-weight: 600; }
+    .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 0.65rem; margin-top: 0.85rem; }
+    .links a { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.85rem 1rem; text-decoration: none; color: var(--fg); font-weight: 600; }
+    .links a:hover { border-color: var(--accent); }
+    footer { color: var(--muted); font-size: 0.85rem; margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Rafael Rosa</h1>
+  <p class="lead">Independent developer. Building <strong>Deus.iA</strong>, a Bible-grounded pastoral assistant.</p>
+
+  <section class="card">
+    <h3>Deus.iA — Pastoral assistant</h3>
+    <p>Calm, Bible-centered conversation. Available on iOS, in Portuguese and English.</p>
+    <a href="https://apps.apple.com/app/id6747890119" target="_blank" rel="noopener noreferrer">View on the App Store →</a>
+  </section>
+
+  <h2>Legal &amp; support</h2>
+  <div class="links">
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Use</a>
+    <a href="./support.html">Support</a>
+    <a href="mailto:deus.ai.support@gmail.com">Contact</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Rafael Rosa · <a href="https://github.com/rafaaelrosa" target="_blank" rel="noopener noreferrer">github.com/rafaaelrosa</a></p>
+  </footer>
+</main>
+</body>
+</html>

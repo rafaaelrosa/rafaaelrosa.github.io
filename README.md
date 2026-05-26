@@ -1,25 +1,32 @@
 # rafaaelrosa.github.io
 
-GitHub **user** Pages site. Hosts only [`app-ads.txt`](./app-ads.txt) at the site root so [Google AdMob](https://support.google.com/admob/answer/9363762) can fetch:
+GitHub **user** Pages site for [Rafael Rosa](https://github.com/rafaaelrosa). Hosts the developer landing page and the public-facing legal / support pages for **Deus.iA**, plus [`app-ads.txt`](./app-ads.txt) at the site root so [Google AdMob](https://support.google.com/admob/answer/9363762) can fetch it.
 
-`https://rafaaelrosa.github.io/app-ads.txt`
+## Live URLs
 
-The Deus.iA support page stays in the separate [`deus-ai-support`](https://github.com/rafaaelrosa/deus-ai-support) repository.
+| File | URL | Used by |
+|---|---|---|
+| `app-ads.txt` | `https://rafaaelrosa.github.io/app-ads.txt` | AdMob authorization (hostname-only fetch) |
+| `index.html` | `https://rafaaelrosa.github.io/` | App Store Connect → **Marketing URL** |
+| `privacy.html` | `https://rafaaelrosa.github.io/privacy.html` | App Store Connect → **App Privacy → Privacy Policy URL**; Play Console → Privacy policy |
+| `support.html` | `https://rafaaelrosa.github.io/support.html` | App Store Connect → **Support URL** |
+| `terms.html` | `https://rafaaelrosa.github.io/terms.html` | In-app + App Description "Terms of Use" link |
 
 ## Publish
 
 1. Create a **public** GitHub repository named exactly **`rafaaelrosa.github.io`** (must match your username).
-2. Add this folder as the repo root (or push from below).
-3. **Settings → Pages:** deploy from branch **`main`**, folder **`/ (root)`**.
-4. Verify in a browser: `https://rafaaelrosa.github.io/app-ads.txt` shows one line of plain text.
-5. In AdMob: **Check for updates** on app-ads.txt (verification can take hours).
+2. **Settings → Pages:** deploy from branch **`main`**, folder **`/ (root)`**.
+3. Verify in a browser: each URL above returns HTTP 200 and renders.
+4. In AdMob: **Apps → Deus.iA → app-ads.txt → Check for updates** (verification can take up to 24h).
 
-## Git remote (after you create the empty repo on GitHub)
+## Edit
 
-```bash
-cd /path/to/rafaaelrosa.github.io
-git remote add origin https://github.com/rafaaelrosa/rafaaelrosa.github.io.git
-git push -u origin main
-```
+- Pure static HTML + inline CSS. No build step.
+- Push to `main` → GitHub Pages republishes within ~60s.
+- After publishing a new URL in App Store Connect (Privacy / Support / Marketing), confirm the link opens with no auth wall.
 
-Replace the URL with the one GitHub shows if different.
+## Notes
+
+- The `app-ads.txt` content (publisher ID + `DIRECT` + certification ID) must match exactly what AdMob shows — do not paraphrase.
+- AdMob crawler always hits `https://<hostname>/app-ads.txt`. Adding extra files to this repo does **not** affect detection.
+- Privacy / Terms are mirrored from the canonical sources; if either changes, update the HTML here and bump the "Last updated" date.
